@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+.main.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.logo {
+    width: 80%;
+}
+
+#hero-img {
+    width: 100%;
 }
 
 #hero {
@@ -38,7 +53,7 @@ main section {
 }
 
 #background {
-    background-color: burlywood;
+    background-color: #fcfbfc;
     height: 725px;
     width: 100%;
     grid-column: 1/11;
@@ -51,13 +66,14 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: blanchedalmond;
+    background-color: #fcfbfc;
     color: black;
 }
 
 h2 {
+    font-family: Arial, sans-serif;
     margin: 0;
-    background-color: burlywood;
+    background-color: #fcfbfc;
 }
 
 #logo_link {
@@ -67,7 +83,7 @@ h2 {
 }
 
 header {
-    background-color: #224122;
+    background-color: rgba(20,30,13, .7);
     color: black;
     display: grid;
     grid-template-columns: 150px auto;
@@ -81,18 +97,19 @@ nav {
 nav a {
     padding: 35px;
     text-align: center;
-    color: white;
+    color: #fcfbfc;
     text-decoration: none;
 }
 
 nav a:hover {
     background-color: black;
-    color: yellow;
+    color: #d9c2a3;
+    text-decoration: underline;
 }
 
-.home-tittle {
+.home-title {
     margin-top: 10px;
-    color: black;
+    color: burlywood;
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
 }
@@ -103,13 +120,14 @@ h4 {
 }
 
 .book .join {
-    background-color: aliceblue;
-    color: aqua;
+    background-color: #d9c2a3;
+    color: black;
     margin-top: 50px;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .book:hover, .join:hover {
@@ -151,7 +169,7 @@ footer .social img {
     padding-top: 15px;
 }
 
-footer a:hover {
+footer p a:hover {
     color: pink;
     text-decoration: underline;
 }
@@ -202,7 +220,6 @@ footer p {
     border: 10px solid #d9c2a3;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
-    width: 100%;
 }
 
 .card-img:hover {
